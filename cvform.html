@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../cvform.css">
+</head>
+<body>
+    <div class="form-header">
+        <div>
+            <h1>Application Form/ CV</h1>
+            <p>Date 2022/6/24</p>
+        </div>
+        <div class="profile">
+            <Photo>
+            <img src="/06.jpg" alt="">
+        </div>
+    </div>
+
+        <table >
+  
+            <tr>
+                <td class="label-style"><label for="name">Name (katakana)</label> </td>
+                <td class="input-style" colspan="3">
+                    <input type="text" placeholder="ス メイ " class="custom-input">
+                    <span class="custom-input-value">←hello</span>
+                </td>
+            </tr>
+            <tr>
+                <td class="label-style"><label for="name">Name (English)</label> </td>
+                <td class="input-style" colspan="3">
+                    <input type="text" placeholder="SU MAY" class="custom-input">
+                </td>
+            </tr>
+            <tr>
+                <td class="label-style"><label for="name">Date of Birth</label> </td>
+                <td class="input-style">
+                    <input type="date" placeholder="ス メイ " class="custom-input">
+                </td>
+                <td class="merge-style">Gender</td>
+                <td>
+                    <input type="text" placeholder="Female">
+                </td>
+            </tr>
+            <tr>
+                <td class="label-style"><label for="name">Phone No</label> </td>
+                <td class="input-style">
+                    <input type="text" placeholder="(+95)0998989898" class="custom-input">
+                </td>
+                <td class="merge-style">Email</td>
+                <td>
+                    <input type="text" placeholder="sumay@gmail.com">
+                </td>
+            </tr>
+            <tr>
+                <td class="label-style"><label for="name">Address (now)</label> </td>
+                <td class="input-style" colspan="3">
+                    <input type="text" placeholder="No.207, ABC Street, Kamayut Township, Yangon" class="custom-input">
+                    <span class="custom-input-value">←hello</span>
+                </td>
+            </tr>
+            <tr>
+                <td class="label-style"><label for="name">Address (Resident's card)</label> </td>
+                <td class="input-style" colspan="3">
+                    <input type="text" placeholder="No.15, 3rd floor, Sin Yae Kan Street, Ahlone Township, Yangon " class="custom-input">
+                    <p class="custom-input-value">←hello</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="label-style"><label for="name">Career after graduating from Japanese language school</label> </td>
+                <td class="input-style" colspan="3">
+                    <input type="text" placeholder="College (IT)" class="custom-input">
+                    <span class="custom-input-value">←hello</span>
+                </td>
+            </tr>
+            <tr>
+                <td class="label-style"><label for="name"> <span>Supporter</span> Name</label> </td>
+                <td class="input-style" colspan="3">
+                    <input type="text" placeholder="U AUNG MYINT " class="custom-input">
+                    <span class="custom-input-value">←hello</span>
+                </td>
+            </tr>
+            <tr>
+                <td class="label-style"><label for="name">Relationship with the <span>Supporter</span></label> </td>
+                <td class="input-style" colspan="3">
+                    <input type="text" placeholder="U AUNG MYINT " class="custom-input">
+                    <span class="custom-input-value">←hello</span>
+                </td>
+            </tr>
+            <tr>
+                <td class="label-style"><label for="name"> <span>Supporter</span> Address</label> </td>
+                <td class="input-style" colspan="3">
+                    <input type="text" placeholder="No.15, 3rd floor, Sin Yae Kan Street, Ahlone Township, Yangon " class="custom-input">
+                    <p class="custom-input-value">←hello</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="label-style"><label for="name"> <span>Supporter</span> Phone no</label> </td>
+                <td class="input-style" colspan="3">
+                    <input type="text" placeholder="(+95)092222222" class="custom-input">
+                    <span class="custom-input-value">←hello</span>
+                </td>
+            </tr>
+            <tr>
+                <td class="label-style"><label for="name"> <span>Supporter</span> Occupation</label> </td>
+                <td class="input-style" colspan="3">
+                    <input type="text" placeholder="Shop Owner" class="custom-input">
+                    <span class="custom-input-value">←hello</span>
+                </td>
+            </tr>
+            <tr>
+                <td class="label-style"><label for="name"> <span>Supporter</span> Monthly Income</label> </td>
+                <td class="input-style" colspan="3">
+                    <input type="text" placeholder="About 1,100,000 Kyats" class="custom-input">
+                    <span class="custom-input-value">←hello</span>
+                </td>
+            </tr>
+
+          </table>
+          
+          <table class="second-table">
+            <tr>
+                <th class="label-style">Date</th>
+                <th class="label-style" colspan="2">Primary to High School Record</th>
+                <th class="label-style attendance">Period of Attendance</th>
+            </tr>
+            <tr>
+                <td class="input-style">
+                    <input type="text" placeholder="1997 Year 6 Month" class="custom-input">
+                    <span class="custom-input-value">hello</span>
+                </td>
+                <td class="label-style">
+                    Name of Primary School
+                </td>
+                <td class="input-style">
+                    <input type="text" placeholder="No (2) Basic Education High School">
+                </td>
+                <td class="input-style">
+                    <input type="text" placeholder="No (2) Basic Education High School">
+                </td>
+            </tr>
+          </table>
+        
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          const input = document.querySelector('.custom-input');
+          const customInputValue = document.querySelector('.custom-input-value');
+      
+          input.addEventListener('input', function () {
+            customInputValue.style.display = input.value.trim() === '' ? 'inline' : 'none';
+          });
+        });
+      </script>
+</body>
+</html>
