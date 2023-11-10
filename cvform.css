@@ -54,7 +54,7 @@ input:focus{
 }
 
 .custom-input{
-    width: 200px;
+    width: 350px;
     white-space: pre-wrap;
 }
 .input::focus .custom-input-value{
@@ -67,8 +67,4 @@ input:focus{
 }
 span,p{
     color: red;
-}
-
-.attendance{
-    width: 150px;
 }
